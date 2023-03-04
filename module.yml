@@ -1,0 +1,19 @@
+---
+version: 1
+module:
+  description: CMDBuild - Web enterprise environment to configure custom applications for asset management.
+  authors:
+    - Jean-Nicolas Boulay (JN) <https://jean-nicolas.name>
+  category: Application
+  tags:
+    - assets management
+  configuration:
+    network:
+      private:
+        entries:
+          - location: /cmdbuild
+            ports:
+              - internal: 8080
+                external: 80
+              - internal: 8080
+                external: 443
